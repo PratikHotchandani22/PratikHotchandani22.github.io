@@ -1,0 +1,5 @@
+pickle-mixin
+flask
+markovify
+pandas
+numpy

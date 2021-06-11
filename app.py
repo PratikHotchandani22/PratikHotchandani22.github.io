@@ -7,12 +7,12 @@ model = pickle.load(open('finalized_model.sav','rb'))
 
 @app.route('/')
 def home():
-    return render_template('body.html')
+    return render_template('index.html')
 
 @app.route('/sheldon_says',methods=['GET'])
 def sheldon_says(): 
     output = model.make_sentence()
-    return render_template('body.html',prediction_text='Sheldon tells you that:  {}'.format(output))
+    return render_template('index.html',prediction_text='Sheldon tells you that:  {}'.format(output))
 
 if __name__ == "__main__":
     app.run(debug=True)
