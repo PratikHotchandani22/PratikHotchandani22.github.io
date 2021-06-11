@@ -3,3 +3,4 @@ flask
 markovify
 pandas
 numpy
+gunicorn
